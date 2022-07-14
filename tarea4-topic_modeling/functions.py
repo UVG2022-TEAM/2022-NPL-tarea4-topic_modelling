@@ -42,7 +42,7 @@ def make_trigrams(articles, bigram_mod, trigram_mod):
 def lemmatization(texts: List[List[str]], allowed_postags: List = None) -> List[List[str]]:
     nlp = spacy.load('es_core_news_sm')
     if allowed_postags is None:
-        allowed_postags = ['NOUN', 'ADJ', 'VERB', 'ADV']
+        allowed_postags = ['NOUN', 'ADJ', 'ADV']
 
     texts_out = []
     for sent in texts:
